@@ -1,0 +1,3 @@
+**/venv/
+set-up-secrets.sh
+**/__pycache__/
