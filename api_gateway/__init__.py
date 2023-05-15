@@ -22,4 +22,4 @@ client = WebApplicationClient(server.config['OAUTH_GOOGLE_CLIENT_ID'])
 
 from api_gateway import routes, models
 
-server.run(ssl_context="adhoc")
+server.run(host='0.0.0.0', port=8080, ssl_context="adhoc")
