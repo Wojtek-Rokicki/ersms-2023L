@@ -1,0 +1,20 @@
+{
+  "version": "2.0.3",
+  "summary": {
+    "title": "threat_model",
+    "owner": "Piotr Frątczak",
+    "description": "Microservices application for people to arrange workouts together.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Piotr Frątczak"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
