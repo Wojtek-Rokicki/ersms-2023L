@@ -42,8 +42,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "a893ba74-a418-4fd0-80d2-cdda51112ebd",
             "zIndex": 1,
+            "id": "a893ba74-a418-4fd0-80d2-cdda51112ebd",
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -76,8 +76,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "06672ae9-baf5-4193-9ef1-4683f4d49359",
             "zIndex": 2,
+            "id": "06672ae9-baf5-4193-9ef1-4683f4d49359",
             "data": {
               "type": "tm.Process",
               "name": "Mobile\nApp",
@@ -110,8 +110,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "a661a418-9ee8-4ede-a6ff-5bdf93d4a462",
             "zIndex": 3,
+            "id": "a661a418-9ee8-4ede-a6ff-5bdf93d4a462",
             "data": {
               "type": "tm.Process",
               "name": "Web\nBrowser",
@@ -224,15 +224,15 @@
               "threats": []
             },
             "id": "a7f10766-4bdb-442c-951a-4f36a1a934df",
+            "labels": [
+              "https"
+            ],
             "source": {
               "cell": "ca2b4942-9231-4804-bcba-f0ee6917e06c"
             },
             "target": {
               "cell": "1f7e4ae6-ff06-4169-af64-a1df2202071b"
-            },
-            "labels": [
-              "https"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -271,6 +271,78 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "4f3519ea-3a31-41ca-b26c-b7adca08f635",
+            "source": {
+              "cell": "f2b2927b-2a0a-4a8c-afd1-8bd8f4598ef1"
+            },
+            "target": {
+              "cell": "11b01b6d-ad35-4908-9353-fa73584c58f4"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "83c7971f-cc97-44c8-82c0-b55472c3ec2a",
+            "source": {
+              "cell": "1c8cc1c0-22c4-4de5-909b-34269d7834b8"
+            },
+            "target": {
+              "cell": "e91fae2d-f34f-4fc2-953c-aaa66ad908db"
+            }
+          },
+          {
             "position": {
               "x": 899,
               "y": 200
@@ -291,8 +363,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "bed16f4f-aea1-4dab-acde-f0e2c56e53cb",
             "zIndex": 11,
+            "id": "bed16f4f-aea1-4dab-acde-f0e2c56e53cb",
             "data": {
               "type": "tm.Process",
               "name": "Web App\nServer",
@@ -318,6 +390,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 12,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -340,8 +413,7 @@
             },
             "target": {
               "cell": "f2b2927b-2a0a-4a8c-afd1-8bd8f4598ef1"
-            },
-            "zIndex": 12
+            }
           },
           {
             "shape": "flow",
@@ -357,6 +429,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 13,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -379,8 +452,7 @@
             },
             "target": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
-            },
-            "zIndex": 13
+            }
           },
           {
             "shape": "flow",
@@ -396,6 +468,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 14,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -418,8 +491,7 @@
             },
             "target": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
-            },
-            "zIndex": 14
+            }
           },
           {
             "shape": "flow",
@@ -435,6 +507,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 15,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -457,8 +530,7 @@
             },
             "target": {
               "cell": "bed16f4f-aea1-4dab-acde-f0e2c56e53cb"
-            },
-            "zIndex": 15
+            }
           },
           {
             "position": {
@@ -481,8 +553,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "78eab160-8bde-4a3f-9102-78819b21d091",
             "zIndex": 16,
+            "id": "78eab160-8bde-4a3f-9102-78819b21d091",
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -515,8 +587,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "ca2b4942-9231-4804-bcba-f0ee6917e06c",
             "zIndex": 17,
+            "id": "ca2b4942-9231-4804-bcba-f0ee6917e06c",
             "data": {
               "type": "tm.Process",
               "name": "Authentication\nMicroservice",
@@ -549,8 +621,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "1c8cc1c0-22c4-4de5-909b-34269d7834b8",
             "zIndex": 18,
+            "id": "1c8cc1c0-22c4-4de5-909b-34269d7834b8",
             "data": {
               "type": "tm.Process",
               "name": "Events\nMicroservice",
@@ -583,6 +655,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 19,
             "id": "f2b2927b-2a0a-4a8c-afd1-8bd8f4598ef1",
             "data": {
               "type": "tm.Process",
@@ -593,8 +666,7 @@
               "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
-            },
-            "zIndex": 19
+            }
           },
           {
             "shape": "flow",
@@ -610,6 +682,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 20,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -632,8 +705,7 @@
             },
             "target": {
               "cell": "1c8cc1c0-22c4-4de5-909b-34269d7834b8"
-            },
-            "zIndex": 20
+            }
           },
           {
             "position": {
@@ -667,6 +739,86 @@
               "description": "",
               "outOfScope": true,
               "reasonOutOfScope": "Managed by Google",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1528,
+              "y": 60
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Users DB"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "11b01b6d-ad35-4908-9353-fa73584c58f4",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Store",
+              "name": "Users DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1528,
+              "y": 230
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Events DB"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "e91fae2d-f34f-4fc2-953c-aaa66ad908db",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Store",
+              "name": "Events DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
               "isALog": false,
               "storesCredentials": false,
               "isEncrypted": false,
