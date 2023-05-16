@@ -176,6 +176,19 @@
                   "new": false,
                   "number": 3,
                   "score": ""
+                },
+                {
+                  "id": "b5f8ab2b-4abd-48e3-af56-57efd73a5ddb",
+                  "title": "Phone Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Users refusing to admit they have created/edited/deleted an event.\n",
+                  "mitigation": "Store and maintain audit logs to establish a reliable trail of evidence.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
                 }
               ]
             }
@@ -1431,6 +1444,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
