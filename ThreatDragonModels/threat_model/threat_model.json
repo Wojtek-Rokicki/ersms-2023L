@@ -31,11 +31,16 @@
               "height": 159.37500000000003
             },
             "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Separate Machine"
+              }
+            },
             "zIndex": -1,
             "id": "fbef4ac0-3222-4971-9ce3-d2ab886b1180",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Separate Machine",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -51,11 +56,16 @@
               "height": 159.375
             },
             "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Separate Machine"
+              }
+            },
             "zIndex": -1,
             "id": "472869b5-b3c4-44b5-8ea2-909198abfac1",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Separate Machine",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -379,7 +389,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -391,7 +401,7 @@
             },
             "id": "83c7971f-cc97-44c8-82c0-b55472c3ec2a",
             "labels": [
-              "Data Flow"
+              ""
             ],
             "source": {
               "cell": "1c8cc1c0-22c4-4de5-909b-34269d7834b8"
