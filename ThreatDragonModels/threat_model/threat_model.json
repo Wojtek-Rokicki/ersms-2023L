@@ -189,6 +189,19 @@
                   "new": false,
                   "number": 4,
                   "score": ""
+                },
+                {
+                  "id": "5f43f365-cf7d-4cef-a59f-aabf532fb564",
+                  "title": "Phone Tampering",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker gets access to the user's phone and tampers with the data on their phone.\n",
+                  "mitigation": "Store users' data concerning the app on the server so that there is always a copy the system can trust. What is more, there is no sensitive user data stored within the app.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
                 }
               ]
             }
@@ -1444,6 +1457,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
