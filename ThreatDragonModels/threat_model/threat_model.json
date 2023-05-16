@@ -163,7 +163,21 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f2a35812-b06d-4960-9b0e-3240695bf53d",
+                  "title": "Phone Spoofing",
+                  "status": "NotApplicable",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "An attacker gets access to the user's phone and acts as the user.",
+                  "mitigation": "Not a threat we can act against. The user is responsible for their phone.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1417,6 +1431,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
