@@ -85,8 +85,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -101,8 +101,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "50e1db26-b3bc-437a-9396-205dd5c571f1",
+                  "title": "User Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -545,15 +559,15 @@
               "threats": []
             },
             "id": "81cf1fbc-488a-4162-afcd-a7d182b8dcdb",
+            "labels": [
+              "https"
+            ],
             "source": {
               "cell": "bed16f4f-aea1-4dab-acde-f0e2c56e53cb"
             },
             "target": {
               "cell": "a661a418-9ee8-4ede-a6ff-5bdf93d4a462"
-            },
-            "labels": [
-              "https"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -620,15 +634,15 @@
               "threats": []
             },
             "id": "1974d51a-7494-4950-a54f-ac8ab38b8520",
+            "labels": [
+              "https"
+            ],
             "source": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
             },
             "target": {
               "cell": "06672ae9-baf5-4193-9ef1-4683f4d49359"
-            },
-            "labels": [
-              "https"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -659,15 +673,15 @@
               "threats": []
             },
             "id": "a0c3774c-ebb6-4355-9b8d-b93fdf91efb1",
+            "labels": [
+              "https"
+            ],
             "source": {
               "cell": "f2b2927b-2a0a-4a8c-afd1-8bd8f4598ef1"
             },
             "target": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
-            },
-            "labels": [
-              "https"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1282,6 +1296,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 24,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1304,8 +1319,7 @@
             },
             "target": {
               "cell": "bed16f4f-aea1-4dab-acde-f0e2c56e53cb"
-            },
-            "zIndex": 24
+            }
           },
           {
             "shape": "flow",
@@ -1321,6 +1335,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 25,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1343,8 +1358,7 @@
             },
             "target": {
               "cell": "ca2b4942-9231-4804-bcba-f0ee6917e06c"
-            },
-            "zIndex": 25
+            }
           },
           {
             "shape": "flow",
@@ -1360,6 +1374,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 26,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1382,14 +1397,13 @@
             },
             "target": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
-            },
-            "zIndex": 26
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
