@@ -202,6 +202,19 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "b9f31116-e82d-40a8-9319-97fe1c309c96",
+                  "title": "Mobile App Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker gets access to confidential data within the app on a user's phone.",
+                  "mitigation": "No sensitive data is stored in the app. To avoid that the app uses the OAuth protocol to authenticate users. Additionally, the communication with the API uses TLS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
                 }
               ]
             }
@@ -1457,6 +1470,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
