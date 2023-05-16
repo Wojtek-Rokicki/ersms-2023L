@@ -115,6 +115,19 @@
                   "new": false,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "62d62f28-01b3-4f1d-aa95-65d95f42884a",
+                  "title": "User Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Users refusing to admit they have created/edited/deleted an event.",
+                  "mitigation": "Store and maintain audit logs to establish a reliable trail of evidence.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
                 }
               ]
             }
@@ -1404,6 +1417,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
