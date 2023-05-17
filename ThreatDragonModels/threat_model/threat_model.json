@@ -1164,13 +1164,11 @@
                 "text": "Users DB"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "strokeWidth": 1,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -1188,7 +1186,7 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "8b3f036f-461b-4607-9fe4-c19d7f62c0a1",
@@ -1206,7 +1204,7 @@
                 {
                   "id": "09c72973-3bae-4064-9bb9-75f9e6454b7c",
                   "title": "Users DB Denial of Service",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "An attacker tries to fill up the database so that it stops responding or overrides old data.",
@@ -1268,6 +1266,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "d14eb0c3-96b3-49de-92b5-996fc1042e03",
+                  "title": "Events DB Denial of Service",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Same as the Users DB.",
+                  "mitigation": "Same as the Users DB.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
                   "score": ""
                 }
               ]
@@ -1395,6 +1406,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 9
+    "threatTop": 10
   }
 }
