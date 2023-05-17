@@ -228,6 +228,19 @@
                   "new": false,
                   "number": 18,
                   "score": ""
+                },
+                {
+                  "id": "b6f268b5-724f-4094-83e1-9950850decf6",
+                  "title": "App Dos",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker tries to perform a DOS attack by making a lot of requests to the server.",
+                  "mitigation": "Implement load-balancing mechanisms to distribute incoming app user requests across multiple servers or instances. Implement rate-limiting mechanisms to restrict the number of requests or connections allowed from a single user or IP address within a specified time frame. Employ traffic analysis and filtering techniques to identify and block suspicious or malicious traffic patterns associated with DoS attacks. Use authentication with OAuth and possibly Captcha.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
                 }
               ]
             }
@@ -1172,6 +1185,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 18
+    "threatTop": 19
   }
 }
