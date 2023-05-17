@@ -215,6 +215,19 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "7ce15683-e80e-4535-812c-fdde52f475ba",
+                  "title": "App Elevation of privilege",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker elevates their access through the app.",
+                  "mitigation": "Implement the principle of least privilege. Strong authentication and authorization carefully implement authorization with OAuth. Implement comprehensive auditing and logging mechanisms to monitor user activities and detect any suspicious or unauthorized attempts to elevate privileges. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
                 }
               ]
             }
@@ -1159,6 +1172,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 17
+    "threatTop": 18
   }
 }
