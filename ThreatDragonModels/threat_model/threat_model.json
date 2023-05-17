@@ -1164,11 +1164,13 @@
                 "text": "Users DB"
               },
               "topLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1186,7 +1188,7 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "8b3f036f-461b-4607-9fe4-c19d7f62c0a1",
@@ -1212,6 +1214,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "34281884-d8f7-4344-be3b-3d9d74b7d610",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 0,
                   "score": ""
                 }
               ]
@@ -1279,6 +1294,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "32c12c93-883f-47de-be11-b7d6480da87a",
+                  "title": "Events DB Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A user does not admit to editing/deleting events.",
+                  "mitigation": "Users are allowed to edit only the events they created. They are authenticated with OAuth. Another mitigation is to securely store and maintain audit logs to establish a reliable trail of evidence in case of disputes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
                   "score": ""
                 }
               ]
@@ -1406,6 +1434,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 10
+    "threatTop": 12
   }
 }
