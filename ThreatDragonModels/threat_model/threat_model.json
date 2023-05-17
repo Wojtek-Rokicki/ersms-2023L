@@ -783,11 +783,11 @@
                 {
                   "id": "fc28e0e1-b400-4e3c-9e0a-e5431362cd63",
                   "title": "API Tampering",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker tampers with data processed on the API server.",
-                  "mitigation": "",
+                  "mitigation": "Employ strong encryption techniques, such as Transport Layer Security (TLS) to encrypt data transmitted between the API and its clients. Implement robust input validation on the API to prevent injection attacks, such as SQL injection or cross-site scripting (XSS). Validate and sanitize all user input and API parameters.  Authenticate and authorize API clients using secure methods with OAuth tokens. Implement rate limiting and throttling mechanisms to prevent excessive or abusive usage of the API.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 22,
