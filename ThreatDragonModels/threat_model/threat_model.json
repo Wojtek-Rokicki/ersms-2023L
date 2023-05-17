@@ -1164,11 +1164,13 @@
                 "text": "Users DB"
               },
               "topLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1186,7 +1188,7 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "8b3f036f-461b-4607-9fe4-c19d7f62c0a1",
@@ -1199,6 +1201,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "09c72973-3bae-4064-9bb9-75f9e6454b7c",
+                  "title": "Users DB Denial of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker tries to fill up the database so that it stops responding or overrides old data.",
+                  "mitigation": "We use Google Cloud which implements Cloud Armor security policies to help protect load-balanced applications from distributed denial of service (DDoS) and other web-based attacks. This includes monitoring, rate limiting, and bot management. Also, we have network segmentation with Kubernetes which assures that multiple replicas of the database stay available.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
                   "score": ""
                 }
               ]
@@ -1380,6 +1395,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
