@@ -166,7 +166,7 @@
               "threats": [
                 {
                   "id": "f2a35812-b06d-4960-9b0e-3240695bf53d",
-                  "title": "Phone Spoofing",
+                  "title": "App Spoofing",
                   "status": "NotApplicable",
                   "severity": "Low",
                   "type": "Spoofing",
@@ -179,7 +179,7 @@
                 },
                 {
                   "id": "b5f8ab2b-4abd-48e3-af56-57efd73a5ddb",
-                  "title": "Phone Repudiation",
+                  "title": "App Repudiation",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Repudiation",
@@ -192,7 +192,7 @@
                 },
                 {
                   "id": "5f43f365-cf7d-4cef-a59f-aabf532fb564",
-                  "title": "Phone Tampering",
+                  "title": "App Tampering",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
@@ -205,7 +205,7 @@
                 },
                 {
                   "id": "b9f31116-e82d-40a8-9319-97fe1c309c96",
-                  "title": "Mobile App Information Disclosure",
+                  "title": "App Information Disclosure",
                   "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
@@ -1159,6 +1159,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
