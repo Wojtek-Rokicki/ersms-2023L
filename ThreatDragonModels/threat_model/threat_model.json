@@ -85,8 +85,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -101,16 +101,16 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "50e1db26-b3bc-437a-9396-205dd5c571f1",
                   "title": "User Spoofing",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Users come to events in place of someone else.",
+                  "mitigation": "User ratings by other users and the possibility to report unexpected behaviors of other users. Secure user authentication with OAuth so that only the people that are supposed to know the details of events are able to get them.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
