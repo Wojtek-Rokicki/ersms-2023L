@@ -792,6 +792,19 @@
                   "new": false,
                   "number": 22,
                   "score": ""
+                },
+                {
+                  "id": "644c4670-8be0-499e-ade8-7ae9ecdbbacc",
+                  "title": "API Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "User modifies data concerning their profile or the events and does not admit to it.",
+                  "mitigation": "Implement logging and auditing mechanisms to create an audit trail of user activities and transactions on the server. This helps in preventing repudiation by providing evidence of user actions and interactions.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
                 }
               ]
             }
@@ -1212,6 +1225,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 22
+    "threatTop": 23
   }
 }
