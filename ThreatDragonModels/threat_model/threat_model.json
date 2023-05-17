@@ -805,6 +805,19 @@
                   "new": false,
                   "number": 23,
                   "score": ""
+                },
+                {
+                  "id": "7030e262-a416-4d16-a262-5894d393cb34",
+                  "title": "API Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker tries to access sensitive data exchanged on the server.",
+                  "mitigation": "Implement encryption for sensitive data in transit and at rest, and enforce access controls to restrict unauthorized access to sensitive resources - done by default by the cloud provider - Google Cloud.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
                 }
               ]
             }
@@ -1225,6 +1238,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 23
+    "threatTop": 24
   }
 }
