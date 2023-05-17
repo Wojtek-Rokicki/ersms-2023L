@@ -1218,6 +1218,19 @@
                 },
                 {
                   "id": "34281884-d8f7-4344-be3b-3d9d74b7d610",
+                  "title": "Users DB Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A user does not admit to editing their profile and friendship records.",
+                  "mitigation": "Users are allowed to edit only their profiles. They are authenticated with OAuth. Another mitigation is to securely store and maintain audit logs to establish a reliable trail of evidence in case of disputes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "cb8df52d-4ae3-496c-a1c2-b50e0c716d66",
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "Medium",
@@ -1434,6 +1447,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 12
+    "threatTop": 14
   }
 }
