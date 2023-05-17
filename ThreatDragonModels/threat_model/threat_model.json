@@ -749,8 +749,8 @@
                 "text": "API"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -765,7 +765,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "e824a917-08fe-4ecf-a038-c4114a84b486",
@@ -835,11 +835,11 @@
                 {
                   "id": "541d4d28-120f-4738-b0ef-3504b646dd4f",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "An attacker tries to get admin access in the API.",
-                  "mitigation": "",
+                  "mitigation": "Grant users and API clients only the minimal permissions necessary to perform their intended tasks. Implement robust input validation on the API to prevent injection attacks, such as SQL injection or cross-site scripting (XSS). Validate and sanitize all user input and API parameters. Authenticate and authorize API clients using secure methods with OAuth tokens. Implement robust logging and monitoring mechanisms to track and detect any suspicious activity or attempts at privilege escalation on the API. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 26,
