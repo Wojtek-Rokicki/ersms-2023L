@@ -766,7 +766,21 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e824a917-08fe-4ecf-a038-c4114a84b486",
+                  "title": "API Spoofing",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker tries to act as a legitimate user to perform actions in the app.",
+                  "mitigation": "Implement strong user authentication protocols and mechanisms with OAuth.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1185,6 +1199,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 19
+    "threatTop": 20
   }
 }
