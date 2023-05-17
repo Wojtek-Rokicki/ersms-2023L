@@ -167,11 +167,11 @@
                 {
                   "id": "f2a35812-b06d-4960-9b0e-3240695bf53d",
                   "title": "App Spoofing",
-                  "status": "NotApplicable",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Spoofing",
                   "description": "An attacker gets access to the user's phone and acts as the user.",
-                  "mitigation": "Not a threat we can act against. The user is responsible for their phone.",
+                  "mitigation": "Utilize strong and properly implemented authentication protocols - OAuth. Implement granular permission controls within the app to restrict access to sensitive device features or user data.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
