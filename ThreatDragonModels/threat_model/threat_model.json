@@ -749,8 +749,8 @@
                 "text": "API"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -765,7 +765,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "e824a917-08fe-4ecf-a038-c4114a84b486",
@@ -778,6 +778,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "fc28e0e1-b400-4e3c-9e0a-e5431362cd63",
+                  "title": "API Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker tampers with data processed on the API server.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
                   "score": ""
                 }
               ]
@@ -1199,6 +1212,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 20
+    "threatTop": 22
   }
 }
