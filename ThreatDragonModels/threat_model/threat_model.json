@@ -731,15 +731,15 @@
               "threats": []
             },
             "id": "35a67017-6cf5-422b-a079-c26fef33b0d0",
+            "labels": [
+              "https"
+            ],
             "source": {
               "cell": "1f7e4ae6-ff06-4169-af64-a1df2202071b"
             },
             "target": {
               "cell": "78eab160-8bde-4a3f-9102-78819b21d091"
-            },
-            "labels": [
-              "https"
-            ]
+            }
           },
           {
             "shape": "trust-broundary-curve",
@@ -1187,7 +1187,21 @@
               "isEncrypted": false,
               "isSigned": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8b3f036f-461b-4607-9fe4-c19d7f62c0a1",
+                  "title": "User DB Information Disclosure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker gets a hold of information about the users such as their names, profile descriptions, and acquaintances with other users.",
+                  "mitigation": "First, no sensitive personal data is stored in the database. We use OAuth to authenticate users. What is more, the name the users insert in the app does not have to be their actual name. However, profile descriptions and acquaintances can also be considered sensitive data. To mitigate the issue of such information disclosure, we use a cloud provider - Google, whose comprehensive security strategy includes encryption at rest by default.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1322,6 +1336,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 27,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -1344,14 +1359,13 @@
             },
             "target": {
               "cell": "1f7e4ae6-ff06-4169-af64-a1df2202071b"
-            },
-            "zIndex": 27
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
