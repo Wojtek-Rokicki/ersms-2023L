@@ -818,6 +818,32 @@
                   "new": false,
                   "number": 24,
                   "score": ""
+                },
+                {
+                  "id": "825921ea-66f0-4198-b4bd-662b5b600b7d",
+                  "title": "API DoS",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker tries to access the API and perform a DDoS attack by performing many requests or exchanging a lot of data.",
+                  "mitigation": "Implement traffic monitoring and filtering mechanisms to detect and mitigate excessive or malicious traffic that can overload the server and impact its availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "541d4d28-120f-4738-b0ef-3504b646dd4f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker tries to get admin access in the API.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
                 }
               ]
             }
@@ -1238,6 +1264,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 24
+    "threatTop": 26
   }
 }
