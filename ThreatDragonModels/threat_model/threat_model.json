@@ -904,13 +904,11 @@
                 "text": "Users DB"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "strokeWidth": 1,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -928,7 +926,7 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "8b3f036f-461b-4607-9fe4-c19d7f62c0a1",
@@ -971,15 +969,15 @@
                 },
                 {
                   "id": "cb8df52d-4ae3-496c-a1c2-b50e0c716d66",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
+                  "title": "User DB Tampering",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "An external attacker tampers with user data.",
+                  "mitigation": "Use a highly trusted cloud provider - Google Cloud that implements access controls, encryption, auditing and logging, security checks, and integration checks. Have multiple replicas of the data scattered on different nodes.",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 0,
+                  "new": false,
+                  "number": 15,
                   "score": ""
                 }
               ]
@@ -1060,6 +1058,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "7d7ce9b4-384f-4204-8420-140745912546",
+                  "title": "Events DB Tampering",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An external attacker tampers with event data.",
+                  "mitigation": "Use a highly trusted cloud provider - Google Cloud that implements access controls, encryption, auditing and logging, security checks, and integration checks. Have multiple replicas of the data scattered on different nodes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
                   "score": ""
                 }
               ]
@@ -1148,6 +1159,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Konrad Owsikowski",
-    "threatTop": 14
+    "threatTop": 16
   }
 }
