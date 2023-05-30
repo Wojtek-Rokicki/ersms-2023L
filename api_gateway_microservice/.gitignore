@@ -1,0 +1,14 @@
+# Mac OS X
+.DS_Store
+
+# Python
+**/venv/
+**/__pycache__/
+
+# Flask
+migrations/
+
+# OAuth secrets
+set-up-secrets.sh
+env.list
+manifests/secret.yaml

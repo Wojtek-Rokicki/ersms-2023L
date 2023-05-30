@@ -1,0 +1,28 @@
+# Configuration for Kubernetes Cluster and auth service
+# This is Kubernetes object - "record of intent" 
+apiVersion: apps/v1
+kind: Deployment # Deployment object
+metadata:
+  name: auth
+  labels:
+    app: auth
+spec: # Desired state of the object, k8s tracks the state and updates if needed
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth
+  template:
+    metadata:
+      labels:
+        app: auth
+    spec: # 
+      containers:
+        - name: auth
+          image: woiro/ersms-api-gateway:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: auth-configmap
+            - secretRef:
+                name: auth-secret

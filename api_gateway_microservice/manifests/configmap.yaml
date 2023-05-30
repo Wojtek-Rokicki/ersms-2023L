@@ -1,0 +1,10 @@
+# Set enviroment variables within our container
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-configmap
+data:
+  POSTGRES_DATABASE_URL: postgresql://postgres:password@10.96.0.2/postgres
+
+
+# all the variables will be accessible in the container
