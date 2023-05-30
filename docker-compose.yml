@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+    events_api:
+        container_name: events_api
+        build:
+            context: .
+        command: bash -c 'python -m alembic upgrade head && gunicorn --config ./gunicorn.conf.py --workers 4'
+        ports:
+          - ${PORT}:8080
+        depends_on:
+            - postgres_db
+        restart: on-failure
+    postgres_db:
+        image: postgres:15-alpine
+        container_name: postgres_db
+        command: -p ${DATABASE_PORT}
+        ports:
+            - ${DATABASE_PORT}:${DATABASE_PORT}
+        environment:
+            POSTGRES_DB: ${DATABASE_NAME}
+            POSTGRES_USER: ${DATABASE_USER}
+            POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
