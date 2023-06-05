@@ -24,5 +24,3 @@ from api_gateway import routes, models
 
 with server.app_context():
     db.create_all()
-
-server.run(host='0.0.0.0', port=8080, ssl_context="adhoc")

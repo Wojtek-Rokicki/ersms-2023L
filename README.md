@@ -1,7 +1,7 @@
 # ersms-2023L
 Train together - microservice architecture application for setting up community workouts
 
-# Kubernetes Deployment
+# Kubernetes locally - Minikube Deployment
 
 Fill required secrets for pod deployment
 
@@ -22,20 +22,17 @@ type: Opaque
 minikube start
 kubectl apply -f ./postgres_microservice/manifests/
 kubectl apply -f ./api_gateway_microservice/manifests/
-echo "$(minikube ip) simple-auth.me" | sudo tee -a /etc/hosts
-kubectl apply -f ./ingress/manifests/
+minikube service auth
 ```
 
-Then go to https://simple-auth.me
-
-# Achive
+# Archive
 
 ## Docker auth with local Postgres
 
 ### Containerize Flask Application
 https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-20-04
 
-### Setup PostgreSQL database
+### Setup PostgreSQL database locally
 Install PostgreSQL
 
 (Linux)
@@ -55,7 +52,9 @@ psql postgres
 ```
 ```SQL
 CREATE ROLE users_admin WITH LOGIN PASSWORD 'password';
-ALTER ROLE chris CREATEDB;
+ALTER ROLE users_admin CREATEDB;
+CREATE DATABASE users;
+GRANT ALL PRIVILEGES ON DATABASE users TO users_admin;
 ```
 
 Create necessary tables
@@ -73,7 +72,7 @@ docker run -p 8080:8080 --env-file ./env.list woiro/ersms-api-gateway
 env.list
 ```
 SECRET_KEY=...
-POSTGRES_DATABASE_URL=...
+POSTGRES_DATABASE_URL=postgresql://users_admin:password@host.docker.internal/users
 OAUTH_GOOGLE_CLIENT_ID=...
 OAUTH_GOOGLE_CLIENT_SECRET=...
 ```
